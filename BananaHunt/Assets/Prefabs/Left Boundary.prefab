@@ -99,3 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2982223133983330628}
   verticalHeight: 10
+  scrollSpeed: 0
