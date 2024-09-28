@@ -1,9 +1,0 @@
-com.DefaultCompany.BananaHunt.launcher-pngs-0 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\build\generated\res\pngs\release
-com.DefaultCompany.BananaHunt.launcher-resValues-1 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\build\generated\res\resValues\release
-com.DefaultCompany.BananaHunt.launcher-rs-2 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\build\generated\res\rs\release
-com.DefaultCompany.BananaHunt.launcher-mergeReleaseResources-3 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
-com.DefaultCompany.BananaHunt.launcher-mergeReleaseResources-4 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-com.DefaultCompany.BananaHunt.launcher-merged_res-5 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\build\intermediates\merged_res\release
-com.DefaultCompany.BananaHunt.launcher-main-6 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\res
-com.DefaultCompany.BananaHunt.launcher-release-7 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\release\res
-com.DefaultCompany.BananaHunt.launcher-packaged_res-8 E:\New Games\BananaHunt\BananaHunt\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\packaged_res\release

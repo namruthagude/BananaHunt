@@ -18,13 +18,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Debug.Log("Left Button Pressed");
             StartCoroutine(JumpLeft());
 
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Debug.Log("Right Button Pressed");
             StartCoroutine(JumpRight());
         }
 

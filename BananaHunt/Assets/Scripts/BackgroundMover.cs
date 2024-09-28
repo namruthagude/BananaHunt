@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundMover : MonoBehaviour
 {
-    public GameObject prefab;
+    public GameObject appendAt;
     public float verticalHeight;
     public float scrollSpeed;
 
@@ -13,18 +13,18 @@ public class BackgroundMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPosition = transform.position;
-        Instantiate(prefab, new Vector3(transform.position.x , transform.position.y + verticalHeight , transform.position.z), Quaternion.identity);   
+       startPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float newPosition = Mathf.Repeat(Time.time * scrollSpeed, verticalHeight);
-        transform.position = startPosition + Vector3.down * newPosition;
-        if (transform.position.y <= -20)
+        float ypos = transform.position.y - scrollSpeed * Time.deltaTime;
+        transform.position = new Vector3(transform.position.x, ypos, transform.position.z); 
+        if (transform.position.y <= -10)
         {
-            Destroy(this.gameObject);
+            Debug.Log("GameObject" + gameObject.name);
+            transform.position = new Vector3(appendAt.transform.position.x, appendAt.transform.position.y + verticalHeight, appendAt.transform.position.z);
         }
     }
 }
