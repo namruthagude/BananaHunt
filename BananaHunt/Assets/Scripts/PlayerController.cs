@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -42,5 +43,35 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, 45f);
         playerAnimations.SetBool("jump_right", false);
 
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+       if(other.gameObject.tag == "Obstacle")
+        {
+            GameManager.Instance.DecreaseLives();
+            int lives = LivesManager.instance.GetLives();
+            if(lives <= 0)
+            {
+                Destroy(this.gameObject);
+                GameManager.Instance.isGameOver = true;
+                GameManager.Instance.GameOver();
+            }
+            else
+            {
+                Destroy(other.gameObject);
+            }
+            
+        }
+       else if(other.gameObject.tag == "Heart")
+        {
+            Destroy(other.gameObject);
+            GameManager.Instance.IncreaseLives();
+        }
+       else if (other.gameObject.tag == "Banana")
+        {
+            Destroy(other.gameObject);
+            GameManager.Instance.IncreaseBanana();
+        }
     }
 }

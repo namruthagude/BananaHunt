@@ -23,7 +23,6 @@ public class BackgroundMover : MonoBehaviour
         transform.position = new Vector3(transform.position.x, ypos, transform.position.z); 
         if (transform.position.y <= -10)
         {
-            Debug.Log("GameObject" + gameObject.name);
             transform.position = new Vector3(appendAt.transform.position.x, appendAt.transform.position.y + verticalHeight, appendAt.transform.position.z);
         }
     }
